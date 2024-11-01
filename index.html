@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="profile-section">
+        <div id="profileDisplay">
+            <img src="profile1.jpg" alt="Profile Picture">
+            <h2 id="nameDisplay">Nama Anda</h2>
+            <p id="roleDisplay">Front End Designer</p>
+            <button onclick="showForm()">Edit</button>
+        </div>
+
+        <div id="profileDetails">
+            <p>Availability: <span id="availabilityDisplay">Full Time</span></p>
+            <p>Usia: <span id="ageDisplay">19</span></p>
+            <p>Lokasi: <span id="locationDisplay">Jakarta</span></p>
+            <p>Pengalaman: <span id="experienceDisplay">2</span></p>
+            <p>Email: <span id="emailDisplay">email@gmail.com</span></p>
+        </div>
+    </div>
+
+    <div class="form-section" id="editForm" style="display:none;">
+        <form onsubmit="updateProfile(event)">
+            <input type="text" id="nameInput" placeholder="Nama Anda">
+            <input type="text" id="roleInput" placeholder="Role">
+            <input type="text" id="availabilityInput" placeholder="Availability">
+            <input type="number" id="ageInput" placeholder="Usia">
+            <input type="text" id="locationInput" placeholder="Lokasi">
+            <input type="number" id="experienceInput" placeholder="Year of Experience">
+            <input type="email" id="emailInput" placeholder="Email">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

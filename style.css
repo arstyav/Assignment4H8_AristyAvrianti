@@ -1,0 +1,118 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+/* Profile Section Styling */
+.profile-section {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    width: 500px;
+    text-align: center;
+}
+
+.profile-section img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid #4a90e2;
+    margin-bottom: 20px;
+}
+
+.profile-section h2 {
+    font-size: 28px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.profile-section p {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.profile-section #profileDetails p {
+    text-align: left;
+    margin-left: 25px;
+}
+
+/* Button Styling */
+button {
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+/* Form Section Styling */
+.form-section {
+    display: none; /* Initially hidden */
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    width: 500px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-section input[type="text"],
+.form-section input[type="number"],
+.form-section input[type="email"] {
+    padding: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #333333;
+}
+
+.form-section input[type="text"]:focus,
+.form-section input[type="number"]:focus,
+.form-section input[type="email"]:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+.form-section button[type="submit"] {
+    width: 100%;
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-section button[type="submit"]:hover {
+    background-color: #357ABD;
+}
